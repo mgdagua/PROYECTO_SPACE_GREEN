@@ -1,0 +1,33 @@
+\hypertarget{_l_c_d__16x2__8-bit___header___file_8h_source}{}\doxysection{LCD\+\_\+16x2\+\_\+8-\/bit\+\_\+\+Header\+\_\+\+File.h}
+\mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{ * Header File For 16x2 LCD }}
+\DoxyCodeLine{3 \textcolor{comment}{ * www.electronicwings.com  }}
+\DoxyCodeLine{4 \textcolor{comment}{ */}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{15 \textcolor{comment}{// This is a guard condition so that contents of this file are not included}}
+\DoxyCodeLine{16 \textcolor{comment}{// more than once.  }}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#ifndef XC\_HEADER\_TEMPLATE\_H}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define XC\_HEADER\_TEMPLATE\_H}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <xc.h>} \textcolor{comment}{// include processor files -\/ each processor file is guarded.  }}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <pic18f4550.h>}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define RS LATD0                    }\textcolor{comment}{/*PORT 0 pin is used for Register Select*/}\textcolor{preprocessor}{}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define EN LATD1                    }\textcolor{comment}{/*PORT 1 pin is used for Enable*/}\textcolor{preprocessor}{}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define ldata LATB                  }\textcolor{comment}{/*PORT is used for transmitting data to LCD*/}\textcolor{preprocessor}{}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define LCD\_Dir1 TRISD}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define LCD\_Dir2 TRISB}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{32 \textcolor{keywordtype}{void} \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_ad484cc22a9a6bec640097f26d9b35722}{LCD\_Init}}();}
+\DoxyCodeLine{37 \textcolor{keywordtype}{void} \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_a171237fc02f9ec4ce9950836cf27d3f1}{LCD\_Command}}(\textcolor{keywordtype}{char} y);}
+\DoxyCodeLine{42 \textcolor{keywordtype}{void} \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_affd757c37bc3919d2abc8c66ebf46fd4}{LCD\_Char}}(\textcolor{keywordtype}{char} x);}
+\DoxyCodeLine{47 \textcolor{keywordtype}{void} \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_a22f0a1e06eef47597408d0b782fa49f6}{LCD\_String}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *);}
+\DoxyCodeLine{52 \textcolor{keywordtype}{void} \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_ab4547814cd401728927a58fbe76ca173}{MSdelay}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} );}
+\DoxyCodeLine{57 \textcolor{keywordtype}{void} \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_afedff6ea961e4641984f319129e3a1d4}{LCD\_String\_xy}}(\textcolor{keywordtype}{char} ,\textcolor{keywordtype}{char} ,\textcolor{keyword}{const} \textcolor{keywordtype}{char}*);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{/* XC\_HEADER\_TEMPLATE\_H */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{60 }
+
+\end{DoxyCode}

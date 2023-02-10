@@ -1,0 +1,70 @@
+\hypertarget{_u_s_a_r_t___source___file_8c}{}\doxysection{Referencia del Archivo USART\+\_\+\+Source\+\_\+\+File.\+c}
+\label{_u_s_a_r_t___source___file_8c}\index{USART\_Source\_File.c@{USART\_Source\_File.c}}
+{\ttfamily \#include \char`\"{}USART\+\_\+\+Header\+\_\+\+File.\+h\char`\"{}}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_u_s_a_r_t___source___file_8c_afb4b88e1987584afc1fa235f899852c3}{USART\+\_\+\+Init}} (long baud\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Init asignacion de puertos para inicializar la comunicacion serial. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_s_a_r_t___source___file_8c_ac5781762c2fa78c52aba00675722069c}{USART\+\_\+\+Tx\+Char}} (char out)
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Tx\+Char Permite la transmision de datos al receptor. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{_u_s_a_r_t___source___file_8c_a600231bce9ac71e7b6408b801e4516e7}{USART\+\_\+\+Rx\+Char}} ()
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Rx\+Char Permite al receptor guardar el registro enviado por el transmisor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_s_a_r_t___source___file_8c_ae1e70f3887da174491e3ac3ec22573e9}{USART\+\_\+\+Send\+String}} (const char $\ast$out)
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Send\+String Realiza el envio del mensaje entre el RX y Tx. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{_u_s_a_r_t___source___file_8c_afb4b88e1987584afc1fa235f899852c3}\label{_u_s_a_r_t___source___file_8c_afb4b88e1987584afc1fa235f899852c3}} 
+\index{USART\_Source\_File.c@{USART\_Source\_File.c}!USART\_Init@{USART\_Init}}
+\index{USART\_Init@{USART\_Init}!USART\_Source\_File.c@{USART\_Source\_File.c}}
+\doxysubsubsection{\texorpdfstring{USART\_Init()}{USART\_Init()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Init (\begin{DoxyParamCaption}\item[{long}]{baud\+\_\+rate }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Init asignacion de puertos para inicializar la comunicacion serial. 
+
+\mbox{\Hypertarget{_u_s_a_r_t___source___file_8c_a600231bce9ac71e7b6408b801e4516e7}\label{_u_s_a_r_t___source___file_8c_a600231bce9ac71e7b6408b801e4516e7}} 
+\index{USART\_Source\_File.c@{USART\_Source\_File.c}!USART\_RxChar@{USART\_RxChar}}
+\index{USART\_RxChar@{USART\_RxChar}!USART\_Source\_File.c@{USART\_Source\_File.c}}
+\doxysubsubsection{\texorpdfstring{USART\_RxChar()}{USART\_RxChar()}}
+{\footnotesize\ttfamily char USART\+\_\+\+Rx\+Char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Rx\+Char Permite al receptor guardar el registro enviado por el transmisor. 
+
+\begin{DoxyReturn}{Devuelve}
+Retorna una variable que recibe los datos y los almacena en el registro 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_s_a_r_t___source___file_8c_ae1e70f3887da174491e3ac3ec22573e9}\label{_u_s_a_r_t___source___file_8c_ae1e70f3887da174491e3ac3ec22573e9}} 
+\index{USART\_Source\_File.c@{USART\_Source\_File.c}!USART\_SendString@{USART\_SendString}}
+\index{USART\_SendString@{USART\_SendString}!USART\_Source\_File.c@{USART\_Source\_File.c}}
+\doxysubsubsection{\texorpdfstring{USART\_SendString()}{USART\_SendString()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Send\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Send\+String Realiza el envio del mensaje entre el RX y Tx. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Recibe} & la variable que se va a transmitir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_u_s_a_r_t___source___file_8c_ac5781762c2fa78c52aba00675722069c}\label{_u_s_a_r_t___source___file_8c_ac5781762c2fa78c52aba00675722069c}} 
+\index{USART\_Source\_File.c@{USART\_Source\_File.c}!USART\_TxChar@{USART\_TxChar}}
+\index{USART\_TxChar@{USART\_TxChar}!USART\_Source\_File.c@{USART\_Source\_File.c}}
+\doxysubsubsection{\texorpdfstring{USART\_TxChar()}{USART\_TxChar()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Tx\+Char (\begin{DoxyParamCaption}\item[{char}]{out }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Tx\+Char Permite la transmision de datos al receptor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recibe} & el parametro que permite la comuncacion con el receptor \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,153 @@
+\hypertarget{_l_c_d__16x2__8-bit___header___file_8h}{}\doxysection{Referencia del Archivo LCD\+\_\+16x2\+\_\+8-\/bit\+\_\+\+Header\+\_\+\+File.h}
+\label{_l_c_d__16x2__8-bit___header___file_8h}\index{LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}}
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+{\ttfamily \#include $<$pic18f4550.\+h$>$}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_af8903d8eea3868940c60af887473b152}{RS}}~LATD0                    /$\ast$PORT 0 pin is used for Register Select$\ast$/
+\item 
+\#define \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_a22e6626f2c98ed902f8ded47f6438c05}{EN}}~LATD1                    /$\ast$PORT 1 pin is used for Enable$\ast$/
+\item 
+\#define \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_a9ab6954b25558526556ab556c4be540b}{ldata}}~LATB                  /$\ast$PORT is used for transmitting data to LCD$\ast$/
+\item 
+\#define \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_aed2bb39f5c316a826212a4c6c0542744}{LCD\+\_\+\+Dir1}}~TRISD
+\item 
+\#define \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_aac520447433f9966bfcbb58c15f9c2f6}{LCD\+\_\+\+Dir2}}~TRISB
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_ad484cc22a9a6bec640097f26d9b35722}{LCD\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em LCD\+\_\+\+Init para incializar el LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_a171237fc02f9ec4ce9950836cf27d3f1}{LCD\+\_\+\+Command}} (char y)
+\begin{DoxyCompactList}\small\item\em LCD\+\_\+\+Command Envia datos a los puertos del pic como comando para el LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_affd757c37bc3919d2abc8c66ebf46fd4}{LCD\+\_\+\+Char}} (char x)
+\begin{DoxyCompactList}\small\item\em LCD\+\_\+\+Char Enviar y registrar datos en el LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_a22f0a1e06eef47597408d0b782fa49f6}{LCD\+\_\+\+String}} (const char $\ast$)
+\begin{DoxyCompactList}\small\item\em LCD\+\_\+\+String para imprimir en el LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_ab4547814cd401728927a58fbe76ca173}{MSdelay}} (unsigned int)
+\begin{DoxyCompactList}\small\item\em MSdelay genera un retraso en la respuesta del LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d__16x2__8-bit___header___file_8h_afedff6ea961e4641984f319129e3a1d4}{LCD\+\_\+\+String\+\_\+xy}} (char, char, const char $\ast$)
+\begin{DoxyCompactList}\small\item\em LCD\+\_\+\+String\+\_\+xy imprime el mensaje en la 1er y 2da linea. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{_l_c_d__16x2__8-bit___header___file_8h_a22e6626f2c98ed902f8ded47f6438c05}\label{_l_c_d__16x2__8-bit___header___file_8h_a22e6626f2c98ed902f8ded47f6438c05}} 
+\index{LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}!EN@{EN}}
+\index{EN@{EN}!LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{EN}{EN}}
+{\footnotesize\ttfamily \#define EN~LATD1                    /$\ast$PORT 1 pin is used for Enable$\ast$/}
+
+\mbox{\Hypertarget{_l_c_d__16x2__8-bit___header___file_8h_aed2bb39f5c316a826212a4c6c0542744}\label{_l_c_d__16x2__8-bit___header___file_8h_aed2bb39f5c316a826212a4c6c0542744}} 
+\index{LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}!LCD\_Dir1@{LCD\_Dir1}}
+\index{LCD\_Dir1@{LCD\_Dir1}!LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Dir1}{LCD\_Dir1}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+Dir1~TRISD}
+
+\mbox{\Hypertarget{_l_c_d__16x2__8-bit___header___file_8h_aac520447433f9966bfcbb58c15f9c2f6}\label{_l_c_d__16x2__8-bit___header___file_8h_aac520447433f9966bfcbb58c15f9c2f6}} 
+\index{LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}!LCD\_Dir2@{LCD\_Dir2}}
+\index{LCD\_Dir2@{LCD\_Dir2}!LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Dir2}{LCD\_Dir2}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+Dir2~TRISB}
+
+\mbox{\Hypertarget{_l_c_d__16x2__8-bit___header___file_8h_a9ab6954b25558526556ab556c4be540b}\label{_l_c_d__16x2__8-bit___header___file_8h_a9ab6954b25558526556ab556c4be540b}} 
+\index{LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}!ldata@{ldata}}
+\index{ldata@{ldata}!LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{ldata}{ldata}}
+{\footnotesize\ttfamily \#define ldata~LATB                  /$\ast$PORT is used for transmitting data to LCD$\ast$/}
+
+\mbox{\Hypertarget{_l_c_d__16x2__8-bit___header___file_8h_af8903d8eea3868940c60af887473b152}\label{_l_c_d__16x2__8-bit___header___file_8h_af8903d8eea3868940c60af887473b152}} 
+\index{LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}!RS@{RS}}
+\index{RS@{RS}!LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{RS}{RS}}
+{\footnotesize\ttfamily \#define RS~LATD0                    /$\ast$PORT 0 pin is used for Register Select$\ast$/}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{_l_c_d__16x2__8-bit___header___file_8h_affd757c37bc3919d2abc8c66ebf46fd4}\label{_l_c_d__16x2__8-bit___header___file_8h_affd757c37bc3919d2abc8c66ebf46fd4}} 
+\index{LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}!LCD\_Char@{LCD\_Char}}
+\index{LCD\_Char@{LCD\_Char}!LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Char()}{LCD\_Char()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Char (\begin{DoxyParamCaption}\item[{char}]{x }\end{DoxyParamCaption})}
+
+
+
+LCD\+\_\+\+Char Enviar y registrar datos en el LCD. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em x} & Recibe un dato de tipo char \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d__16x2__8-bit___header___file_8h_a171237fc02f9ec4ce9950836cf27d3f1}\label{_l_c_d__16x2__8-bit___header___file_8h_a171237fc02f9ec4ce9950836cf27d3f1}} 
+\index{LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}!LCD\_Command@{LCD\_Command}}
+\index{LCD\_Command@{LCD\_Command}!LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Command()}{LCD\_Command()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Command (\begin{DoxyParamCaption}\item[{char}]{y }\end{DoxyParamCaption})}
+
+
+
+LCD\+\_\+\+Command Envia datos a los puertos del pic como comando para el LCD. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em y} & Recibe un dato de tipo char \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d__16x2__8-bit___header___file_8h_ad484cc22a9a6bec640097f26d9b35722}\label{_l_c_d__16x2__8-bit___header___file_8h_ad484cc22a9a6bec640097f26d9b35722}} 
+\index{LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}!LCD\_Init@{LCD\_Init}}
+\index{LCD\_Init@{LCD\_Init}!LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Init()}{LCD\_Init()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+LCD\+\_\+\+Init para incializar el LCD. 
+
+\mbox{\Hypertarget{_l_c_d__16x2__8-bit___header___file_8h_a22f0a1e06eef47597408d0b782fa49f6}\label{_l_c_d__16x2__8-bit___header___file_8h_a22f0a1e06eef47597408d0b782fa49f6}} 
+\index{LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}!LCD\_String@{LCD\_String}}
+\index{LCD\_String@{LCD\_String}!LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_String()}{LCD\_String()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+LCD\+\_\+\+String para imprimir en el LCD. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recibe} & el mensaje de tipo char \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d__16x2__8-bit___header___file_8h_afedff6ea961e4641984f319129e3a1d4}\label{_l_c_d__16x2__8-bit___header___file_8h_afedff6ea961e4641984f319129e3a1d4}} 
+\index{LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}!LCD\_String\_xy@{LCD\_String\_xy}}
+\index{LCD\_String\_xy@{LCD\_String\_xy}!LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_String\_xy()}{LCD\_String\_xy()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+String\+\_\+xy (\begin{DoxyParamCaption}\item[{char}]{row,  }\item[{char}]{pos,  }\item[{const char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+LCD\+\_\+\+String\+\_\+xy imprime el mensaje en la 1er y 2da linea. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Recibe} & la ubicacion y el valor de tipo char \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d__16x2__8-bit___header___file_8h_ab4547814cd401728927a58fbe76ca173}\label{_l_c_d__16x2__8-bit___header___file_8h_ab4547814cd401728927a58fbe76ca173}} 
+\index{LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}!MSdelay@{MSdelay}}
+\index{MSdelay@{MSdelay}!LCD\_16x2\_8-\/bit\_Header\_File.h@{LCD\_16x2\_8-\/bit\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{MSdelay()}{MSdelay()}}
+{\footnotesize\ttfamily void MSdelay (\begin{DoxyParamCaption}\item[{unsigned int}]{val }\end{DoxyParamCaption})}
+
+
+
+MSdelay genera un retraso en la respuesta del LCD. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recibe} & el retraso de tipo entero sin signo \\
+\hline
+\end{DoxyParams}

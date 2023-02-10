@@ -1,0 +1,93 @@
+\hypertarget{_u_s_a_r_t___header___file_8h}{}\doxysection{Referencia del Archivo USART\+\_\+\+Header\+\_\+\+File.\+h}
+\label{_u_s_a_r_t___header___file_8h}\index{USART\_Header\_File.h@{USART\_Header\_File.h}}
+{\ttfamily \#include $<$pic18f4550.\+h$>$}\newline
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_u_s_a_r_t___header___file_8h_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}}~8000000/64
+\item 
+\#define \mbox{\hyperlink{_u_s_a_r_t___header___file_8h_acea008bd2e51bf8d1466e20b35ff2742}{Baud\+\_\+value}}~(((float)(\mbox{\hyperlink{_u_s_a_r_t___header___file_8h_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}})/(float)baud\+\_\+rate)-\/1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_u_s_a_r_t___header___file_8h_a9da0ff2cd0e74359fab0cc3b86cf937c}{USART\+\_\+\+Init}} (long)
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Init asignacion de puertos para inicializar la comunicacion serial. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_s_a_r_t___header___file_8h_a1ecf3a492db255ed7bea73afddc26a00}{USART\+\_\+\+Tx\+Char}} (char)
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Tx\+Char Permite la transmision de datos al receptor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_s_a_r_t___header___file_8h_a4a1732544fe63b57954eda2fdf6fd5e0}{USART\+\_\+\+Send\+String}} (const char $\ast$)
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Send\+String Realiza el envio del mensaje entre el RX y Tx. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{_u_s_a_r_t___header___file_8h_a600231bce9ac71e7b6408b801e4516e7}{USART\+\_\+\+Rx\+Char}} ()
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Rx\+Char Permite al receptor guardar el registro enviado por el transmisor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{_u_s_a_r_t___header___file_8h_acea008bd2e51bf8d1466e20b35ff2742}\label{_u_s_a_r_t___header___file_8h_acea008bd2e51bf8d1466e20b35ff2742}} 
+\index{USART\_Header\_File.h@{USART\_Header\_File.h}!Baud\_value@{Baud\_value}}
+\index{Baud\_value@{Baud\_value}!USART\_Header\_File.h@{USART\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{Baud\_value}{Baud\_value}}
+{\footnotesize\ttfamily \#define Baud\+\_\+value~(((float)(\mbox{\hyperlink{_u_s_a_r_t___header___file_8h_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}})/(float)baud\+\_\+rate)-\/1)}
+
+\mbox{\Hypertarget{_u_s_a_r_t___header___file_8h_a43bafb28b29491ec7f871319b5a3b2f8}\label{_u_s_a_r_t___header___file_8h_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\index{USART\_Header\_File.h@{USART\_Header\_File.h}!F\_CPU@{F\_CPU}}
+\index{F\_CPU@{F\_CPU}!USART\_Header\_File.h@{USART\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{F\_CPU}{F\_CPU}}
+{\footnotesize\ttfamily \#define F\+\_\+\+CPU~8000000/64}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{_u_s_a_r_t___header___file_8h_a9da0ff2cd0e74359fab0cc3b86cf937c}\label{_u_s_a_r_t___header___file_8h_a9da0ff2cd0e74359fab0cc3b86cf937c}} 
+\index{USART\_Header\_File.h@{USART\_Header\_File.h}!USART\_Init@{USART\_Init}}
+\index{USART\_Init@{USART\_Init}!USART\_Header\_File.h@{USART\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{USART\_Init()}{USART\_Init()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Init (\begin{DoxyParamCaption}\item[{long}]{baud\+\_\+rate }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Init asignacion de puertos para inicializar la comunicacion serial. 
+
+\mbox{\Hypertarget{_u_s_a_r_t___header___file_8h_a600231bce9ac71e7b6408b801e4516e7}\label{_u_s_a_r_t___header___file_8h_a600231bce9ac71e7b6408b801e4516e7}} 
+\index{USART\_Header\_File.h@{USART\_Header\_File.h}!USART\_RxChar@{USART\_RxChar}}
+\index{USART\_RxChar@{USART\_RxChar}!USART\_Header\_File.h@{USART\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{USART\_RxChar()}{USART\_RxChar()}}
+{\footnotesize\ttfamily char USART\+\_\+\+Rx\+Char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Rx\+Char Permite al receptor guardar el registro enviado por el transmisor. 
+
+\begin{DoxyReturn}{Devuelve}
+Retorna una variable que recibe los datos y los almacena en el registro 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_s_a_r_t___header___file_8h_a4a1732544fe63b57954eda2fdf6fd5e0}\label{_u_s_a_r_t___header___file_8h_a4a1732544fe63b57954eda2fdf6fd5e0}} 
+\index{USART\_Header\_File.h@{USART\_Header\_File.h}!USART\_SendString@{USART\_SendString}}
+\index{USART\_SendString@{USART\_SendString}!USART\_Header\_File.h@{USART\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{USART\_SendString()}{USART\_SendString()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Send\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Send\+String Realiza el envio del mensaje entre el RX y Tx. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Recibe} & la variable que se va a transmitir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_u_s_a_r_t___header___file_8h_a1ecf3a492db255ed7bea73afddc26a00}\label{_u_s_a_r_t___header___file_8h_a1ecf3a492db255ed7bea73afddc26a00}} 
+\index{USART\_Header\_File.h@{USART\_Header\_File.h}!USART\_TxChar@{USART\_TxChar}}
+\index{USART\_TxChar@{USART\_TxChar}!USART\_Header\_File.h@{USART\_Header\_File.h}}
+\doxysubsubsection{\texorpdfstring{USART\_TxChar()}{USART\_TxChar()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Tx\+Char (\begin{DoxyParamCaption}\item[{char}]{out }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Tx\+Char Permite la transmision de datos al receptor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recibe} & el parametro que permite la comuncacion con el receptor \\
+\hline
+\end{DoxyParams}

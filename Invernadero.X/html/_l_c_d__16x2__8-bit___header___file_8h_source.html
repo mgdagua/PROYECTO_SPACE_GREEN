@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SPACE GREEN: Fichero Fuente LCD_16x2_8-bit_Header_File.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SPACE GREEN<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema automatizado de control de temperatura y humedad</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">LCD_16x2_8-bit_Header_File.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_l_c_d__16x2__8-bit___header___file_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Header File For 16x2 LCD </span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * www.electronicwings.com  </span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// This is a guard condition so that contents of this file are not included</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// more than once.  </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef XC_HEADER_TEMPLATE_H</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define XC_HEADER_TEMPLATE_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;xc.h&gt;</span> <span class="comment">// include processor files - each processor file is guarded.  </span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;pic18f4550.h&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="_l_c_d__16x2__8-bit___header___file_8h.html#af8903d8eea3868940c60af887473b152">   23</a></span><span class="preprocessor">#define RS LATD0                    </span><span class="comment">/*PORT 0 pin is used for Register Select*/</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="_l_c_d__16x2__8-bit___header___file_8h.html#a22e6626f2c98ed902f8ded47f6438c05">   24</a></span><span class="preprocessor">#define EN LATD1                    </span><span class="comment">/*PORT 1 pin is used for Enable*/</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_l_c_d__16x2__8-bit___header___file_8h.html#a9ab6954b25558526556ab556c4be540b">   25</a></span><span class="preprocessor">#define ldata LATB                  </span><span class="comment">/*PORT is used for transmitting data to LCD*/</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_l_c_d__16x2__8-bit___header___file_8h.html#aed2bb39f5c316a826212a4c6c0542744">   26</a></span><span class="preprocessor">#define LCD_Dir1 TRISD</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="_l_c_d__16x2__8-bit___header___file_8h.html#aac520447433f9966bfcbb58c15f9c2f6">   27</a></span><span class="preprocessor">#define LCD_Dir2 TRISB</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">void</span> <a class="code hl_function" href="_l_c_d__16x2__8-bit___header___file_8h.html#ad484cc22a9a6bec640097f26d9b35722">LCD_Init</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">void</span> <a class="code hl_function" href="_l_c_d__16x2__8-bit___header___file_8h.html#a171237fc02f9ec4ce9950836cf27d3f1">LCD_Command</a>(<span class="keywordtype">char</span> y);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keywordtype">void</span> <a class="code hl_function" href="_l_c_d__16x2__8-bit___header___file_8h.html#affd757c37bc3919d2abc8c66ebf46fd4">LCD_Char</a>(<span class="keywordtype">char</span> x);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keywordtype">void</span> <a class="code hl_function" href="_l_c_d__16x2__8-bit___header___file_8h.html#a22f0a1e06eef47597408d0b782fa49f6">LCD_String</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">void</span> <a class="code hl_function" href="_l_c_d__16x2__8-bit___header___file_8h.html#ab4547814cd401728927a58fbe76ca173">MSdelay</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> );</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keywordtype">void</span> <a class="code hl_function" href="_l_c_d__16x2__8-bit___header___file_8h.html#afedff6ea961e4641984f319129e3a1d4">LCD_String_xy</a>(<span class="keywordtype">char</span> ,<span class="keywordtype">char</span> ,<span class="keyword">const</span> <span class="keywordtype">char</span>*);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif  </span><span class="comment">/* XC_HEADER_TEMPLATE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="ttc" id="a_l_c_d__16x2__8-bit___header___file_8h_html_a171237fc02f9ec4ce9950836cf27d3f1"><div class="ttname"><a href="_l_c_d__16x2__8-bit___header___file_8h.html#a171237fc02f9ec4ce9950836cf27d3f1">LCD_Command</a></div><div class="ttdeci">void LCD_Command(char y)</div><div class="ttdoc">LCD_Command Envia datos a los puertos del pic como comando para el LCD.</div><div class="ttdef"><b>Definition:</b> LCD_16x2.c:28</div></div>
+<div class="ttc" id="a_l_c_d__16x2__8-bit___header___file_8h_html_a22f0a1e06eef47597408d0b782fa49f6"><div class="ttname"><a href="_l_c_d__16x2__8-bit___header___file_8h.html#a22f0a1e06eef47597408d0b782fa49f6">LCD_String</a></div><div class="ttdeci">void LCD_String(const char *)</div><div class="ttdoc">LCD_String para imprimir en el LCD.</div><div class="ttdef"><b>Definition:</b> LCD_16x2.c:49</div></div>
+<div class="ttc" id="a_l_c_d__16x2__8-bit___header___file_8h_html_ab4547814cd401728927a58fbe76ca173"><div class="ttname"><a href="_l_c_d__16x2__8-bit___header___file_8h.html#ab4547814cd401728927a58fbe76ca173">MSdelay</a></div><div class="ttdeci">void MSdelay(unsigned int)</div><div class="ttdoc">MSdelay genera un retraso en la respuesta del LCD.</div><div class="ttdef"><b>Definition:</b> LCD_16x2.c:78</div></div>
+<div class="ttc" id="a_l_c_d__16x2__8-bit___header___file_8h_html_ad484cc22a9a6bec640097f26d9b35722"><div class="ttname"><a href="_l_c_d__16x2__8-bit___header___file_8h.html#ad484cc22a9a6bec640097f26d9b35722">LCD_Init</a></div><div class="ttdeci">void LCD_Init()</div><div class="ttdoc">LCD_Init para incializar el LCD.</div><div class="ttdef"><b>Definition:</b> LCD_16x2.c:11</div></div>
+<div class="ttc" id="a_l_c_d__16x2__8-bit___header___file_8h_html_afedff6ea961e4641984f319129e3a1d4"><div class="ttname"><a href="_l_c_d__16x2__8-bit___header___file_8h.html#afedff6ea961e4641984f319129e3a1d4">LCD_String_xy</a></div><div class="ttdeci">void LCD_String_xy(char, char, const char *)</div><div class="ttdoc">LCD_String_xy imprime el mensaje en la 1er y 2da linea.</div><div class="ttdef"><b>Definition:</b> LCD_16x2.c:59</div></div>
+<div class="ttc" id="a_l_c_d__16x2__8-bit___header___file_8h_html_affd757c37bc3919d2abc8c66ebf46fd4"><div class="ttname"><a href="_l_c_d__16x2__8-bit___header___file_8h.html#affd757c37bc3919d2abc8c66ebf46fd4">LCD_Char</a></div><div class="ttdeci">void LCD_Char(char x)</div><div class="ttdoc">LCD_Char Enviar y registrar datos en el LCD.</div><div class="ttdef"><b>Definition:</b> LCD_16x2.c:38</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

@@ -1,0 +1,114 @@
+\hypertarget{humidity___temp_8c}{}\doxysection{Referencia del Archivo humidity\+\_\+\+Temp.\+c}
+\label{humidity___temp_8c}\index{humidity\_Temp.c@{humidity\_Temp.c}}
+{\ttfamily \#include $<$pic18f4550.\+h$>$}\newline
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Configuration\+\_\+\+Header\+\_\+\+File.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}LCD\+\_\+16x2\+\_\+8-\/bit\+\_\+\+Header\+\_\+\+File.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}string.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}USART\+\_\+\+Header\+\_\+\+File.\+h\char`\"{}}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{humidity___temp_8c_a0280024a0f86151be9e9e91cfa533aaf}{Data\+\_\+\+Out}}~LATA0              /$\ast$ assign Port pin for data$\ast$/
+\item 
+\#define \mbox{\hyperlink{humidity___temp_8c_a69caaefa7115b4d60be5cf19d8a41722}{Data\+\_\+\+In}}~PORTAbits.\+RA0       /$\ast$ read data from Port pin$\ast$/
+\item 
+\#define \mbox{\hyperlink{humidity___temp_8c_a369cc21ac5518187c26e5ebc094614ff}{Data\+\_\+\+Dir}}~TRISAbits.\+RA0      /$\ast$ Port direction $\ast$/
+\item 
+\#define \mbox{\hyperlink{humidity___temp_8c_a024148e99a7143db044a48216664d03d}{\+\_\+\+XTAL\+\_\+\+FREQ}}~8000000          /$\ast$ define \+\_\+\+XTAL\+\_\+\+FREQ for using internal delay $\ast$/
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{humidity___temp_8c_a37a28aa0907c950935c84f61cf236b5b}{DHT11\+\_\+\+Start}} ()
+\begin{DoxyCompactList}\small\item\em DHT11\+\_\+\+Start inicializa el sensor y configura los puertos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{humidity___temp_8c_a0f2c42763f48efa474deee500f49fe8d}{DHT11\+\_\+\+Check\+Response}} ()
+\begin{DoxyCompactList}\small\item\em Recibe los bits que envia el sensor digital para revisar si el bus de datos esta en alto o en bajo. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{humidity___temp_8c_a7f212cbff6a7405d592345b11c669b44}{DHT11\+\_\+\+Read\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Lee los datos de humedad y temperatura captados por el sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{humidity___temp_8c_acdef7a1fd863a6d3770c1268cb06add3}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{humidity___temp_8c_aa1678a75363985337d8f185e32e401fe}{stringbt}} \mbox{[}50\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{humidity___temp_8c_a024148e99a7143db044a48216664d03d}\label{humidity___temp_8c_a024148e99a7143db044a48216664d03d}} 
+\index{humidity\_Temp.c@{humidity\_Temp.c}!\_XTAL\_FREQ@{\_XTAL\_FREQ}}
+\index{\_XTAL\_FREQ@{\_XTAL\_FREQ}!humidity\_Temp.c@{humidity\_Temp.c}}
+\doxysubsubsection{\texorpdfstring{\_XTAL\_FREQ}{\_XTAL\_FREQ}}
+{\footnotesize\ttfamily \#define \+\_\+\+XTAL\+\_\+\+FREQ~8000000          /$\ast$ define \+\_\+\+XTAL\+\_\+\+FREQ for using internal delay $\ast$/}
+
+\mbox{\Hypertarget{humidity___temp_8c_a369cc21ac5518187c26e5ebc094614ff}\label{humidity___temp_8c_a369cc21ac5518187c26e5ebc094614ff}} 
+\index{humidity\_Temp.c@{humidity\_Temp.c}!Data\_Dir@{Data\_Dir}}
+\index{Data\_Dir@{Data\_Dir}!humidity\_Temp.c@{humidity\_Temp.c}}
+\doxysubsubsection{\texorpdfstring{Data\_Dir}{Data\_Dir}}
+{\footnotesize\ttfamily \#define Data\+\_\+\+Dir~TRISAbits.\+RA0      /$\ast$ Port direction $\ast$/}
+
+\mbox{\Hypertarget{humidity___temp_8c_a69caaefa7115b4d60be5cf19d8a41722}\label{humidity___temp_8c_a69caaefa7115b4d60be5cf19d8a41722}} 
+\index{humidity\_Temp.c@{humidity\_Temp.c}!Data\_In@{Data\_In}}
+\index{Data\_In@{Data\_In}!humidity\_Temp.c@{humidity\_Temp.c}}
+\doxysubsubsection{\texorpdfstring{Data\_In}{Data\_In}}
+{\footnotesize\ttfamily \#define Data\+\_\+\+In~PORTAbits.\+RA0       /$\ast$ read data from Port pin$\ast$/}
+
+\mbox{\Hypertarget{humidity___temp_8c_a0280024a0f86151be9e9e91cfa533aaf}\label{humidity___temp_8c_a0280024a0f86151be9e9e91cfa533aaf}} 
+\index{humidity\_Temp.c@{humidity\_Temp.c}!Data\_Out@{Data\_Out}}
+\index{Data\_Out@{Data\_Out}!humidity\_Temp.c@{humidity\_Temp.c}}
+\doxysubsubsection{\texorpdfstring{Data\_Out}{Data\_Out}}
+{\footnotesize\ttfamily \#define Data\+\_\+\+Out~LATA0              /$\ast$ assign Port pin for data$\ast$/}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{humidity___temp_8c_a0f2c42763f48efa474deee500f49fe8d}\label{humidity___temp_8c_a0f2c42763f48efa474deee500f49fe8d}} 
+\index{humidity\_Temp.c@{humidity\_Temp.c}!DHT11\_CheckResponse@{DHT11\_CheckResponse}}
+\index{DHT11\_CheckResponse@{DHT11\_CheckResponse}!humidity\_Temp.c@{humidity\_Temp.c}}
+\doxysubsubsection{\texorpdfstring{DHT11\_CheckResponse()}{DHT11\_CheckResponse()}}
+{\footnotesize\ttfamily void DHT11\+\_\+\+Check\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Recibe los bits que envia el sensor digital para revisar si el bus de datos esta en alto o en bajo. 
+
+\mbox{\Hypertarget{humidity___temp_8c_a7f212cbff6a7405d592345b11c669b44}\label{humidity___temp_8c_a7f212cbff6a7405d592345b11c669b44}} 
+\index{humidity\_Temp.c@{humidity\_Temp.c}!DHT11\_ReadData@{DHT11\_ReadData}}
+\index{DHT11\_ReadData@{DHT11\_ReadData}!humidity\_Temp.c@{humidity\_Temp.c}}
+\doxysubsubsection{\texorpdfstring{DHT11\_ReadData()}{DHT11\_ReadData()}}
+{\footnotesize\ttfamily char DHT11\+\_\+\+Read\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lee los datos de humedad y temperatura captados por el sensor. 
+
+\begin{DoxyReturn}{Devuelve}
+data alamcena los datos leidos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{humidity___temp_8c_a37a28aa0907c950935c84f61cf236b5b}\label{humidity___temp_8c_a37a28aa0907c950935c84f61cf236b5b}} 
+\index{humidity\_Temp.c@{humidity\_Temp.c}!DHT11\_Start@{DHT11\_Start}}
+\index{DHT11\_Start@{DHT11\_Start}!humidity\_Temp.c@{humidity\_Temp.c}}
+\doxysubsubsection{\texorpdfstring{DHT11\_Start()}{DHT11\_Start()}}
+{\footnotesize\ttfamily void DHT11\+\_\+\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+DHT11\+\_\+\+Start inicializa el sensor y configura los puertos. 
+
+\mbox{\Hypertarget{humidity___temp_8c_acdef7a1fd863a6d3770c1268cb06add3}\label{humidity___temp_8c_acdef7a1fd863a6d3770c1268cb06add3}} 
+\index{humidity\_Temp.c@{humidity\_Temp.c}!main@{main}}
+\index{main@{main}!humidity\_Temp.c@{humidity\_Temp.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily void main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{humidity___temp_8c_aa1678a75363985337d8f185e32e401fe}\label{humidity___temp_8c_aa1678a75363985337d8f185e32e401fe}} 
+\index{humidity\_Temp.c@{humidity\_Temp.c}!stringbt@{stringbt}}
+\index{stringbt@{stringbt}!humidity\_Temp.c@{humidity\_Temp.c}}
+\doxysubsubsection{\texorpdfstring{stringbt}{stringbt}}
+{\footnotesize\ttfamily char stringbt\mbox{[}50\mbox{]}}
+

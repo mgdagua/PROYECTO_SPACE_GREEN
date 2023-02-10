@@ -1,0 +1,35 @@
+\hypertarget{_u_s_a_r_t___header___file_8h_source}{}\doxysection{USART\+\_\+\+Header\+\_\+\+File.\+h}
+\mbox{\hyperlink{_u_s_a_r_t___header___file_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/* }}
+\DoxyCodeLine{2 \textcolor{comment}{ * File:   USART\_Source\_File.h}}
+\DoxyCodeLine{3 \textcolor{comment}{ * Author: Logicos}}
+\DoxyCodeLine{4 \textcolor{comment}{ *}}
+\DoxyCodeLine{5 \textcolor{comment}{ * Created on 8 de febrero de 2023, 05:39 PM}}
+\DoxyCodeLine{6 \textcolor{comment}{ */}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{comment}{/* PIC18F4550 USART Header File }}
+\DoxyCodeLine{9 \textcolor{comment}{ * http://www.electronicwings.com}}
+\DoxyCodeLine{10 \textcolor{comment}{ */}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{21 \textcolor{comment}{// This is a guard condition so that contents of this file are not included}}
+\DoxyCodeLine{22 \textcolor{comment}{// more than once.  }}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#ifndef USART\_HEADER\_FILE\_H}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define USART\_HEADER\_FILE\_H}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include <pic18f4550.h>}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include <xc.h>}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{32 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_s_a_r_t___header___file_8h_a9da0ff2cd0e74359fab0cc3b86cf937c}{USART\_Init}}(\textcolor{keywordtype}{long});}
+\DoxyCodeLine{37 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_s_a_r_t___header___file_8h_a1ecf3a492db255ed7bea73afddc26a00}{USART\_TxChar}}(\textcolor{keywordtype}{char});}
+\DoxyCodeLine{42 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_s_a_r_t___header___file_8h_a4a1732544fe63b57954eda2fdf6fd5e0}{USART\_SendString}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *);}
+\DoxyCodeLine{47 \textcolor{keywordtype}{char} \mbox{\hyperlink{_u_s_a_r_t___header___file_8h_a600231bce9ac71e7b6408b801e4516e7}{USART\_RxChar}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#define F\_CPU 8000000/64}}
+\DoxyCodeLine{50 \textcolor{comment}{//\#define Baud\_value(baud\_rate) (((float)(F\_CPU)/(float)baud\_rate)-\/1)}}
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#define Baud\_value (((float)(F\_CPU)/(float)baud\_rate)-\/1)}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{/* USART\_HEADER\_FILE\_H */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

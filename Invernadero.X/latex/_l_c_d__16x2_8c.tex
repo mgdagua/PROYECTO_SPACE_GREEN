@@ -1,0 +1,114 @@
+\hypertarget{_l_c_d__16x2_8c}{}\doxysection{Referencia del Archivo LCD\+\_\+16x2.\+c}
+\label{_l_c_d__16x2_8c}\index{LCD\_16x2.c@{LCD\_16x2.c}}
+{\ttfamily \#include \char`\"{}LCD\+\_\+16x2\+\_\+8-\/bit\+\_\+\+Header\+\_\+\+File.\+h\char`\"{}}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_l_c_d__16x2_8c_ad484cc22a9a6bec640097f26d9b35722}{LCD\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em LCD\+\_\+\+Init para incializar el LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d__16x2_8c_a90345f8c5c020b301b7cc585237485b9}{LCD\+\_\+\+Clear}} ()
+\item 
+void \mbox{\hyperlink{_l_c_d__16x2_8c_aaf2faa30943637e2d89ae27e01474675}{LCD\+\_\+\+Command}} (char cmd)
+\begin{DoxyCompactList}\small\item\em LCD\+\_\+\+Command Envia datos a los puertos del pic como comando para el LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d__16x2_8c_afd6a024235dab5769403dc2d79440f14}{LCD\+\_\+\+Char}} (char dat)
+\begin{DoxyCompactList}\small\item\em LCD\+\_\+\+Char Enviar y registrar datos en el LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d__16x2_8c_ae82669e730dd8cd249730db12f4de7c4}{LCD\+\_\+\+String}} (const char $\ast$msg)
+\begin{DoxyCompactList}\small\item\em LCD\+\_\+\+String para imprimir en el LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d__16x2_8c_ac164102b5548d181e0865cca65dffd73}{LCD\+\_\+\+String\+\_\+xy}} (char row, char pos, const char $\ast$msg)
+\begin{DoxyCompactList}\small\item\em LCD\+\_\+\+String\+\_\+xy imprime el mensaje en la 1er y 2da linea. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d__16x2_8c_add81c609b8f23ffa5eb45774bc49b88e}{MSdelay}} (unsigned int val)
+\begin{DoxyCompactList}\small\item\em MSdelay genera un retraso en la respuesta del LCD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{_l_c_d__16x2_8c_afd6a024235dab5769403dc2d79440f14}\label{_l_c_d__16x2_8c_afd6a024235dab5769403dc2d79440f14}} 
+\index{LCD\_16x2.c@{LCD\_16x2.c}!LCD\_Char@{LCD\_Char}}
+\index{LCD\_Char@{LCD\_Char}!LCD\_16x2.c@{LCD\_16x2.c}}
+\doxysubsubsection{\texorpdfstring{LCD\_Char()}{LCD\_Char()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Char (\begin{DoxyParamCaption}\item[{char}]{x }\end{DoxyParamCaption})}
+
+
+
+LCD\+\_\+\+Char Enviar y registrar datos en el LCD. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em x} & Recibe un dato de tipo char \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d__16x2_8c_a90345f8c5c020b301b7cc585237485b9}\label{_l_c_d__16x2_8c_a90345f8c5c020b301b7cc585237485b9}} 
+\index{LCD\_16x2.c@{LCD\_16x2.c}!LCD\_Clear@{LCD\_Clear}}
+\index{LCD\_Clear@{LCD\_Clear}!LCD\_16x2.c@{LCD\_16x2.c}}
+\doxysubsubsection{\texorpdfstring{LCD\_Clear()}{LCD\_Clear()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_c_d__16x2_8c_aaf2faa30943637e2d89ae27e01474675}\label{_l_c_d__16x2_8c_aaf2faa30943637e2d89ae27e01474675}} 
+\index{LCD\_16x2.c@{LCD\_16x2.c}!LCD\_Command@{LCD\_Command}}
+\index{LCD\_Command@{LCD\_Command}!LCD\_16x2.c@{LCD\_16x2.c}}
+\doxysubsubsection{\texorpdfstring{LCD\_Command()}{LCD\_Command()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Command (\begin{DoxyParamCaption}\item[{char}]{y }\end{DoxyParamCaption})}
+
+
+
+LCD\+\_\+\+Command Envia datos a los puertos del pic como comando para el LCD. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em y} & Recibe un dato de tipo char \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d__16x2_8c_ad484cc22a9a6bec640097f26d9b35722}\label{_l_c_d__16x2_8c_ad484cc22a9a6bec640097f26d9b35722}} 
+\index{LCD\_16x2.c@{LCD\_16x2.c}!LCD\_Init@{LCD\_Init}}
+\index{LCD\_Init@{LCD\_Init}!LCD\_16x2.c@{LCD\_16x2.c}}
+\doxysubsubsection{\texorpdfstring{LCD\_Init()}{LCD\_Init()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+LCD\+\_\+\+Init para incializar el LCD. 
+
+\mbox{\Hypertarget{_l_c_d__16x2_8c_ae82669e730dd8cd249730db12f4de7c4}\label{_l_c_d__16x2_8c_ae82669e730dd8cd249730db12f4de7c4}} 
+\index{LCD\_16x2.c@{LCD\_16x2.c}!LCD\_String@{LCD\_String}}
+\index{LCD\_String@{LCD\_String}!LCD\_16x2.c@{LCD\_16x2.c}}
+\doxysubsubsection{\texorpdfstring{LCD\_String()}{LCD\_String()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+LCD\+\_\+\+String para imprimir en el LCD. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recibe} & el mensaje de tipo char \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d__16x2_8c_ac164102b5548d181e0865cca65dffd73}\label{_l_c_d__16x2_8c_ac164102b5548d181e0865cca65dffd73}} 
+\index{LCD\_16x2.c@{LCD\_16x2.c}!LCD\_String\_xy@{LCD\_String\_xy}}
+\index{LCD\_String\_xy@{LCD\_String\_xy}!LCD\_16x2.c@{LCD\_16x2.c}}
+\doxysubsubsection{\texorpdfstring{LCD\_String\_xy()}{LCD\_String\_xy()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+String\+\_\+xy (\begin{DoxyParamCaption}\item[{char}]{row,  }\item[{char}]{pos,  }\item[{const char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+LCD\+\_\+\+String\+\_\+xy imprime el mensaje en la 1er y 2da linea. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Recibe} & la ubicacion y el valor de tipo char \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d__16x2_8c_add81c609b8f23ffa5eb45774bc49b88e}\label{_l_c_d__16x2_8c_add81c609b8f23ffa5eb45774bc49b88e}} 
+\index{LCD\_16x2.c@{LCD\_16x2.c}!MSdelay@{MSdelay}}
+\index{MSdelay@{MSdelay}!LCD\_16x2.c@{LCD\_16x2.c}}
+\doxysubsubsection{\texorpdfstring{MSdelay()}{MSdelay()}}
+{\footnotesize\ttfamily void MSdelay (\begin{DoxyParamCaption}\item[{unsigned int}]{val }\end{DoxyParamCaption})}
+
+
+
+MSdelay genera un retraso en la respuesta del LCD. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recibe} & el retraso de tipo entero sin signo \\
+\hline
+\end{DoxyParams}
